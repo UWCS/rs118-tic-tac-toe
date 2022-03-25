@@ -1,5 +1,5 @@
 # RS118 Tic-Tac-Toe
-A simple tic-tac-toe game, written for RS118.
+A simple tic-tac-toe game.
 
 ## Usage
 
