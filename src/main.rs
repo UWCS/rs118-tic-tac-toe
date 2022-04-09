@@ -60,12 +60,15 @@ fn main() {
             continue;
         }
         let square = guess.unwrap() - 1;
-        if square > 8 || board.grid[square / 3][square % 3].is_some() {
+        let row = square / 3;
+        let column = square % 3;
+
+        if square > 8 || board.grid[row][column].is_some() {
             continue;
         }
 
         //add the turn to the board
-        board.grid[square / 3][square % 3] = Some(board.current_turn);
+        board.grid[row][column] = Some(board.current_turn);
 
         //print the board
         println!("-------------");
